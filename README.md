@@ -36,6 +36,8 @@ Also if you want only run the frontend part to work on customization. Go to clie
 yarn start
 ```
 
+If you want to check if the project is sending email you can create a test email here in [Ethereal](https://ethereal.email/). You can add the email info in the index.js (backend - root folder). And that way you can check if the project is working correctly. **Remember: the email I'm using is a testemail that ethereal generate for me, that's why I'm sharing with you how create a test email and that way check if you are receiving any email**
+
 If you are a beginner developer I will recommend the steps from the tutorial. If you have more expirence, check the code first and that way you know where to start practice.
 
 **Keep going!**
