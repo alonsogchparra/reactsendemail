@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('/api/form', (req, resp) => {
+app.post('/api/form', (req, res) => {
   nodemailer.createTestAccount((err, account) => {
     const htmlEmail = `
       <h3>Contact Detail</h3>
@@ -45,6 +45,7 @@ app.post('/api/form', (req, resp) => {
       console.log('Message URL: %s', nodemailer.getTestMessageUrl(info));
     })
   })
+  res.end();
 });
 
 
